@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import Table from './Table'
+import Form from './Form'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    team_party: [],
+  }
+  removeTeamParty = (index) => {
+    const {team_party} = this.state
+
+    this.setState({
+      team_party: team_party.filter((team_element, i) => {
+        return i !== index
+      }),
+    })
+  }
+
+  handleSubmit = (teamElement) => {
+    this.setState({team_party: [...this.state.team_party, teamElement]})
+  }
+
+  render() {
+    const { team_party } = this.state
+    return (
+      <div className="container">
+        <Table teamPartyData={team_party} removeTeamParty={this.removeTeamParty} />
+        <Form handleSubmit={this.handleSubmit}/>
+      </div>
+    )
+
+  }
+
 }
 
-export default App;
+export default App
