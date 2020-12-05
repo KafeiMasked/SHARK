@@ -1020,6 +1020,22 @@
     }
   }
   
+  #sharkInfo {
+    text-align: left;
+    font-size:  .8rem;
+    text-indent: 100px;
+    margin-bottom: 15px;
+  }
+
+  #parHeading {
+    text-indent: 35px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  #title {
+    margin-bottom: .1rem;
+  }
   /*
    * Navigation
    */
