@@ -4,33 +4,31 @@ import Form from './Form'
 
 class App extends Component {
   state = {
-    team_party: [],
+    characters: [],
   }
-  removeTeamParty = (index) => {
-    const {team_party} = this.state
+  removeCharacter = (index) => {
+    const {characters} = this.state
 
     this.setState({
-      team_party: team_party.filter((team_element, i) => {
+      characters: characters.filter((character, i) => {
         return i !== index
       }),
     })
   }
 
-  handleSubmit = (teamElement) => {
-    this.setState({team_party: [...this.state.team_party, teamElement]})
+  handleSubmit = (character) => {
+    this.setState({characters: [...this.state.characters, character]})
   }
 
   render() {
-    const { team_party } = this.state
+    const { characters } = this.state
     return (
       <div className="container">
-        <Table teamPartyData={team_party} removeTeamParty={this.removeTeamParty} />
-        <Form handleSubmit={this.handleSubmit}/>
+        <Table characterData = {characters} removeCharacter = {this.removeCharacter} />
+        <Form handleSubmit = {this.handleSubmit} />
       </div>
     )
-
   }
-
 }
 
 export default App

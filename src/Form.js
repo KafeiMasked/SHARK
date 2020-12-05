@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import React, {Component} from 'react'
 
 class Form extends Component {
@@ -11,7 +10,7 @@ class Form extends Component {
 
     handleChange = (event) => {
         const {name, value} = event.target
-    
+
         this.setState({
             [name]: value,
         })
@@ -23,32 +22,29 @@ class Form extends Component {
     }
 
     render() {
-        const { name, talent} = this.state
-        
+        const { name, talent } = this.state;
+
         return (
             <form>
-                <label htmlFor="name">Name</label>
+                <label htmlFor = "name">Name</label>
+                <input 
+                    type = "text"
+                    name = "name"
+                    id = "name"
+                    value = {name}
+                    onChange = {this.handleChange} />
+                <label htmlFor = "talent">Talent</label>
                 <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    value={name}
-                    onChange={this.handleChange} />
-                <label htmlFor="talent">Talent</label>
-                <input
-                    type="text"
-                    name="talent"
-                    id="talent"
-                    value={talent}
-                    onChange={this.handleChange} />
+                    type = "text"
+                    name = "talent"
+                    id = "talent"
+                    value = {talent}
+                    onChange = {this.handleChange} />
                 <input type="button" value="Submit" onClick={this.submitForm} />
             </form>
+            
         );
     }
 }
-
-
-
-
 
 export default Form;
