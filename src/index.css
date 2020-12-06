@@ -1033,7 +1033,7 @@
     text-indent: 100px;
     margin-bottom: 15px;
     color: white;
-    width: 70%;
+    width: 90%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
   }
@@ -1058,6 +1058,11 @@
     margin-bottom: .1rem;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  #mako {
+      background-image: url("https://i.postimg.cc/tTgZ70VB/dwarf.png");
+      
   }
 
   .background {
