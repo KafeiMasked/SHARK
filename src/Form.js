@@ -3,9 +3,6 @@ import React, {Component} from 'react'
 class Form extends Component {
     initialState = {
         name: '',
-        color: '',
-        eats: '',
-        friends: '',
     }
 
     state = this.initialState
@@ -24,7 +21,7 @@ class Form extends Component {
     }
 
     render() {
-        const { name, talent } = this.state;
+        const { name } = this.state;
 
         return (
             <form>
@@ -34,27 +31,6 @@ class Form extends Component {
                     name = "name"
                     id = "name"
                     value = {name}
-                    onChange = {this.handleChange} />
-                <label htmlFor = "color">Color</label>
-                <input
-                    type = "text"
-                    name = "color"
-                    id = "color"
-                    value = {talent}
-                    onChange = {this.handleChange} />
-                <label htmlFor = "eats">Eats</label>
-                <input
-                    type = "text"
-                    name = "eats"
-                    id = "eats"
-                    value = {talent}
-                    onChange = {this.handleChange} />
-                    <label htmlFor = "friends">Friends</label>
-                <input
-                    type = "text"
-                    name = "friends"
-                    id = "friends"
-                    value = {talent}
                     onChange = {this.handleChange} />
 
                 <input type="button" value="Submit" onClick={this.submitForm} />

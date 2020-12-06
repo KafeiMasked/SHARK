@@ -377,7 +377,7 @@
   }
   
   body {
-    color: rgb(56, 89, 197);
+    color: rgb(255, 255, 255);
     background-color: rgb(56, 89, 197);
     font-size: 1rem;
   }
@@ -514,7 +514,7 @@
   }
   
   kbd {
-    background: url("https://www.pexels.com/photo/water-blue-ocean-5412/");
+    background: blue;
     border: 1px solid #ccc;
     border-radius: 3px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
