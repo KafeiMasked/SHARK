@@ -377,8 +377,8 @@
   }
   
   body {
-    color: #404040;
-    background: white;
+    color: rgb(56, 89, 197);
+    background-color: rgb(56, 89, 197);
     font-size: 1rem;
   }
   
@@ -514,7 +514,7 @@
   }
   
   kbd {
-    background-color: #f7f7f7;
+    background: url("https://www.pexels.com/photo/water-blue-ocean-5412/");
     border: 1px solid #ccc;
     border-radius: 3px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
@@ -562,6 +562,7 @@
     padding: 0 1rem;
     margin-left: auto;
     margin-right: auto;
+
   }
   
   .small-container {
@@ -1019,23 +1020,46 @@
       width: 100%;
     }
   }
+
+  .background{
+      background-color: url("https://images.pexels.com/photos/5412/water-blue-ocean.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");;
+      height: 100%;
+      width: 100%;
+  }
   
   #sharkInfo {
     text-align: left;
-    font-size:  .8rem;
+    font-size:  .9rem;
     text-indent: 100px;
     margin-bottom: 15px;
+    color: white;
+    width: 70%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
   }
 
   #parHeading {
     text-indent: 35px;
     margin-bottom: 10px;
     margin-top: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  #sharkHeading {
+    text-indent: 45px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   #title {
     margin-bottom: .1rem;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
   /*
    * Navigation
    */
